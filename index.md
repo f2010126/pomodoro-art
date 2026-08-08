@@ -1,6 +1,6 @@
 # Privacy Policy for Pomodoro Art
 
-Last updated: 2026-08-04
+Last updated: 2026-08-08
 
 Pomodoro Art ("the extension") is a focus timer that gradually reveals a
 public-domain painting during each focus session. This policy explains what data
@@ -20,6 +20,10 @@ The only data the extension works with is:
 - **Your current timer state** (which phase is running, when it ends, the currently
   selected painting), stored in `chrome.storage.local` on your device. This is never
   transmitted.
+- **Folder handles** for your optional "My paintings folder" and music folder
+  sources, stored in your browser's IndexedDB on your device. They are used only to
+  read your chosen folders so the timer can reveal your paintings and play your
+  music; the folders are never uploaded or transmitted.
 
 ## Third-Party Services
 
@@ -46,7 +50,7 @@ The extension does not share data with any third parties.
 
 Settings and timer state remain in your Chrome profile until you change or reset them
 in the extension's options page, or until you remove the extension from Chrome.
-Removing the extension deletes this data.
+Removing the extension deletes this data and the stored folder handles.
 
 ## Changes to This Policy
 
